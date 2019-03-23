@@ -1,1 +1,1 @@
-# Synteco_rekrutacyjne
+# Synteco
