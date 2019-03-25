@@ -7,6 +7,7 @@ body {
 
 .main-view-container {
     width: 1210px;
+    max-width: 100%;
     margin: 0 auto;
 }
 .main-view {
@@ -132,8 +133,8 @@ body {
     border-radius: 3px;
 }
 .view-container {
-    width: 100%;
-    max-width: 950px;
+    width: 950px;
+    max-width: 100%;
     margin: 0 auto;
 }
 .view-container-skills {
@@ -172,12 +173,14 @@ body {
     background: rgb(255, 255, 255);
     margin-top: 150px;
     width: 400px;
+    max-width: 100%;
     height:379px;
 }
 
 .view-container-macbook {
     background: rgb(255, 255, 255);
     width: 400px;
+    max-width:100%;
     height:379px;
     margin-left: 530px;
 }
@@ -488,18 +491,13 @@ body {
 }
 
 @media only screen and (max-width: 375px), only screen and (max-width: 768px)   {
-    body {
-      width: 375px;
-    }
 
     .view-container {
         margin-top: 30px;
     }
-
-    .view-container-skills {
+    .view-container-skills{
         font-size: 20px;
         margin-left: 30px;
-        width:360px;
     }
     .view-container-film{
         margin-left:30px;
@@ -621,8 +619,10 @@ body {
         padding: 5px;
         font-size: 10px;
     }
-    .view-container-section-seven-cooperative-texts p :nth-child(2){
-        margin-bottom:0;
+
+    .view-container-section-seven-cooperative {
+        height: 180px;
+        max-width:100%;
     }
     .main-view-container {
         width: 360px;
@@ -684,6 +684,9 @@ body {
   }
 
   @media only screen and (min-width: 668px) and (max-width: 768px) {
+    body {
+        max-width: 375px;
+    }
     .main-view {
         background-image: url(img/shake_hand_768x512.png);
         background-size: 600px 500px;
@@ -698,9 +701,5 @@ body {
 
     .main-view-button {
         margin-top: -100px;
-    }
-
-    .view-container-section-seven-cooperative-texts p :nth-child(2) {
-        margin-bottom: 0;
     }
   }
