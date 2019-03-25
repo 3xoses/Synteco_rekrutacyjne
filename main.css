@@ -490,6 +490,11 @@ body {
     body {
       max-width: 375px;
     }
+
+    .view-container {
+        margin-top: 30px;
+    }
+    
     .view-container-skills{
         font-size: 20px;
         margin-left: 30px;
@@ -628,6 +633,10 @@ body {
         background-position-x: center;
     }
 
+    .main-view-logo, .main-view-logo-menu {
+        margin-top: 10px;
+    }
+
     .main-view-text-small {
         margin-top: 50px;
     }
@@ -672,7 +681,7 @@ body {
     }
   }
 
-  @media only screen and (min-width: 380px) and (max-width: 768px) {
+  @media only screen and (min-width: 668px) and (max-width: 768px) {
     .main-view {
         background-image: url(img/shake_hand_768x512.png);
         background-size: 600px 500px;
