@@ -486,10 +486,9 @@ body {
     list-style-type: none;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 375px), only screen and (max-width: 768px)   {
     body {
-      overflow-x: hidden;
-      width: 375px;
+      max-width: 375px;
     }
     .view-container-skills{
         font-size: 20px;
@@ -625,7 +624,8 @@ body {
     .main-view {
         background-image: url(img/shake_hand_414x276.png);
         margin-bottom: 0px;
-        background-size: 600px 500px;
+        background-size: 600px 667px;
+        background-position-x: center;
     }
 
     .main-view-text-small {
@@ -669,5 +669,27 @@ body {
     .footer-right-text p {
         font-size: 10px;
         margin-left: 10px;
+    }
+  }
+
+  @media only screen and (min-width: 380px) and (max-width: 768px) {
+    .main-view {
+        background-image: url(img/shake_hand_768x512.png);
+        background-size: 600px 500px;
+        margin-bottom:-400px;
+        background-position-x: center;
+      }
+    
+    .main-view-text-large,
+    .main-view-text-small {
+        margin-top: -150px;
+    }
+
+    .main-view-button {
+        margin-top: -100px;
+    }
+
+    .view-container-section-seven-cooperative-texts p :nth-child(2) {
+        margin-bottom: 0;
     }
   }
